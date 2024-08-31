@@ -28,22 +28,22 @@ module simple_counter_tb();
         #(10)
         reset = 1'b0;
 
-        assert(counter == 2'b00);
+        assert(counter == 2'b00) else $fatal("Expected counter to be 00 after a long reset, but got %b", counter);
         #(4)
-        assert(counter == 2'b01);
+        assert(counter == 2'b01) else $fatal("Expected counter to be 01, but got %b", counter);
         #(8)
-        assert(counter == 2'b10);
+        assert(counter == 2'b10) else $fatal("Expected counter to be 10, but got %b", counter);
         #(8)
-        assert(counter == 2'b11);
+        assert(counter == 2'b11) else $fatal("Expected counter to be 11, but got %b", counter);
         #(8)
-        assert(counter == 2'b00);
+        assert(counter == 2'b00) else $fatal("Expected counter to be 00, but got %b", counter);
         #(8)
-        assert(counter == 2'b01);
+        assert(counter == 2'b01) else $fatal("Expected counter to be 01, but got %b", counter);
 
         #(1)
         reset = 1'b1;
         #(1)
-        assert(counter == 2'b00);
+        assert(counter == 2'b00) else $fatal("Expected counter to be 00 after a reset, but got %b", counter);
 
         $display("All tests passed!");
 

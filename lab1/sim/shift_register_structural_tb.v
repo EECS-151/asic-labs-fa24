@@ -32,12 +32,12 @@ module shift_register_structural_tb();
 
         in = 1'b0;
         #(32)
-        assert(out == 4'b0000);
+        assert(out == 4'b0000) else $fatal("Expected out to be 0000, but got %b after in=%b for 4 cycles", out, in);
 
         for(i = 0; i < 16; i = i + 1) begin
             in = $urandom() % 2;
             #(8);
-            assert(out == {prev_out[2:0], in});
+            assert(out == {prev_out[2:0], in}) else $fatal("Expected out to be %b, but got %b a cycle after in=%b", {prev_out[2:0], in}, out, in);
         end
 
         $display("All tests passed!");

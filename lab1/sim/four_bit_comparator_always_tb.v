@@ -31,17 +31,17 @@ module four_bit_comparator_always_tb();
             b = $urandom() % 16;
             #(1);
             if (a > b) begin
-                assert(greater == 1'b1);
-                assert(less == 1'b0);
-                assert(equal == 1'b0);
+                assert(greater == 1'b1) else $fatal("Expected greater to be 1, but got %b for a=%b, b=%b", greater, a, b);
+                assert(less == 1'b0) else $fatal("Expected less to be 0, but got %b for a=%b, b=%b", less, a, b);
+                assert(equal == 1'b0) else $fatal("Expected equal to be 0, but got %b for a=%b, b=%b", equal, a, b);
             end else if (a < b) begin
-                assert(greater == 1'b0);
-                assert(less == 1'b1);
-                assert(equal == 1'b0);
+                assert(greater == 1'b0) else $fatal("Expected greater to be 0, but got %b for a=%b, b=%b", greater, a, b);
+                assert(less == 1'b1) else $fatal("Expected less to be 1, but got %b for a=%b, b=%b", less, a, b);
+                assert(equal == 1'b0) else $fatal("Expected equal to be 0, but got %b for a=%b, b=%b", equal, a, b);
             end else begin
-                assert(greater == 1'b0);
-                assert(less == 1'b0);
-                assert(equal == 1'b1);
+                assert(greater == 1'b0) else $fatal("Expected greater to be 0, but got %b for a=%b, b=%b", greater, a, b);
+                assert(less == 1'b0) else $fatal("Expected less to be 0, but got %b for a=%b, b=%b", less, a, b);
+                assert(equal == 1'b1) else $fatal("Expected equal to be 1, but got %b for a=%b, b=%b", equal, a, b);
             end
         end
 

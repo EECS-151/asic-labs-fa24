@@ -26,7 +26,7 @@ module decoder_4_to_16_tb();
         for (i = 0; i < 10; i = i + 1) begin
             addr = $urandom % 16;
             #(1);
-            assert(one_hot == 16'b1 << addr);
+            assert(one_hot == 16'b1 << addr) else $fatal("Expected one_hot to be %b, but got %b for addr=%b", 16'b1 << addr, one_hot, addr);
         end
 
         $display("All tests passed!");
