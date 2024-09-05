@@ -25,6 +25,16 @@ sim/decoder_4_to_16_tb.tb: sim/decoder_4_to_16_tb.v FORCE
 $(VCS_TARGETS): sim/%.vpd: sim/%.tb FORCE
 	cd sim && ./$*.tb +verbose=1 +vpdfile+$*.vpd
 
+sim-all: 
+	make sim/one_bit_comparator_structural_tb.vpd 
+	make sim/one_bit_comparator_behavioral_tb.vpd 
+	make sim/one_bit_comparator_always_tb.vpd 
+	make sim/four_bit_comparator_always_tb.vpd 
+	make sim/shift_register_structural_tb.vpd 
+	make sim/shift_register_behavioral_tb.vpd 
+	make sim/simple_counter_tb.vpd 
+	make sim/decoder_4_to_16_tb.vpd
+
 clean: FORCE
 	rm -rf ./build $(junk) *.daidir sim/output.txt \
 	sim/*.tb sim/*.daidir sim/csrc \
