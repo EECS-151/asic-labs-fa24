@@ -1,0 +1,18 @@
+# RTL Simulation Variables
+sim.inputs:
+  input_files:
+    - "src/EECS151.v"
+    - #TODO fill out with custom testebench file
+  timescale: "1ns/10ps"
+  options:
+    - "-notice"
+    - "-line"
+    - "+lint=all,noVCDE"
+    - "+v2k"
+    - "-debug"
+    - "-sverilog"
+  top_module: #TODO name of DUT module
+  tb_name: #TODO name of tb
+  defines: 
+    - "CLOCK_PERIOD=1.00"
+  defines_meta: append

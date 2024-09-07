@@ -1,0 +1,81 @@
+::db::check_and_set_root_attr extract_rc_engine post_route
+::db::check_and_set_root_attr add_fillers_cells {FILL1 FILL4 FILL16}
+::db::check_and_set_root_attr add_stripes_spacing_from_block 2.0
+::db::check_and_set_root_attr add_stripes_stacked_via_bottom_layer met4
+::db::check_and_set_root_attr add_stripes_stacked_via_top_layer met5
+::db::check_and_set_root_attr add_stripes_trim_antenna_back_to_shape stripe
+::db::check_and_set_root_attr assign_pins_edit_in_batch false
+::db::check_and_set_root_attr assign_pins_promoted_macro_bottom_layer met1
+::db::check_and_set_root_attr assign_pins_promoted_macro_top_layer met5
+::db::check_and_set_root_attr delaycal_enable_high_fanout true
+::db::check_and_set_root_attr delaycal_eng_enablepreplacedflow false
+::db::check_and_set_root_attr delaycal_ignore_net_load false
+::db::check_and_set_root_attr design_bottom_routing_layer 2
+::db::check_and_set_root_attr design_flow_effort standard
+::db::check_and_set_root_attr design_power_effort low
+::db::check_and_set_root_attr design_top_routing_layer {}
+::db::check_and_set_root_attr extract_rc_cap_table_basic true
+::db::check_and_set_root_attr extract_rc_cap_table_extended false
+::db::check_and_set_root_attr extract_rc_coupled true
+::db::check_and_set_root_attr extract_rc_coupling_cap_threshold 3.0
+::db::check_and_set_root_attr extract_rc_net_count_in_memory 100000
+::db::check_and_set_root_attr extract_rc_post_route_no_clean_rcdb true
+::db::check_and_set_root_attr extract_rc_relative_cap_threshold 0.03
+::db::check_and_set_root_attr extract_rc_total_cap_threshold 5.0
+::db::check_and_set_root_attr floorplan_default_power_domain_site true
+::db::check_and_set_root_attr floorplan_default_tech_site CoreSite
+::db::check_and_set_root_attr floorplan_max_io_height true
+::db::check_and_set_root_attr floorplan_snap_die_grid manufacturing
+::db::check_and_set_root_attr opt_area_recovery true
+::db::check_and_set_root_attr opt_clock_gate_aware false
+::db::check_and_set_root_attr opt_consider_routing_congestion true
+::db::check_and_set_root_attr opt_delete_insts true
+::db::check_and_set_root_attr opt_detail_drv_failure_reason true
+::db::check_and_set_root_attr opt_drv true
+::db::check_and_set_root_attr opt_drv_margin 0.0
+::db::check_and_set_root_attr opt_enable_podv2_clock_opt_flow true
+::db::check_and_set_root_attr opt_fix_fanout_load true
+::db::check_and_set_root_attr opt_hier_trial_route_honor_read_only false
+::db::check_and_set_root_attr opt_hold_target_slack 0.1
+::db::check_and_set_root_attr opt_honor_fences true
+::db::check_and_set_root_attr opt_post_route_area_reclaim setup_aware
+::db::check_and_set_root_attr opt_post_route_fix_si_transitions true
+::db::check_and_set_root_attr opt_post_route_hold_recovery auto
+::db::check_and_set_root_attr opt_preserve_all_sequential false
+::db::check_and_set_root_attr opt_resize_flip_flops true
+::db::check_and_set_root_attr opt_sequential_genus_restructure_report_failure_reason true
+::db::check_and_set_root_attr opt_setup_target_slack 0.1
+::db::check_and_set_root_attr opt_skew_eco_route false
+::db::check_and_set_root_attr opt_verbose true
+::db::check_and_set_root_attr opt_view_pruning_hold_target_slack_auto_flow 1000
+::db::check_and_set_root_attr opt_view_pruning_hold_views_active_list { ff_n40C_1v95.hold_view }
+::db::check_and_set_root_attr opt_view_pruning_hold_views_persistent_list { ff_n40C_1v95.hold_view}
+::db::check_and_set_root_attr opt_view_pruning_setup_views_active_list { ss_100C_1v60.setup_view }
+::db::check_and_set_root_attr opt_view_pruning_setup_views_persistent_list { ss_100C_1v60.setup_view}
+::db::check_and_set_root_attr opt_view_pruning_tdgr_setup_views_persistent_list { ss_100C_1v60.setup_view}
+::db::check_and_set_root_attr place_detail_check_cut_spacing true
+::db::check_and_set_root_attr place_detail_dpt_flow false
+::db::check_and_set_root_attr place_global_cong_effort high
+::db::check_and_set_root_attr place_global_place_io_pins true
+::db::check_and_set_root_attr place_global_solver_effort high
+::db::check_and_set_root_attr power_boundary_gate_leakage_report false
+::db::check_and_set_root_attr power_view ss_100C_1v60.setup_view
+::db::check_and_set_root_attr route_antenna_cell_name sky130_fd_sc_hd__diode_2
+::db::check_and_set_root_attr route_antenna_diode_insertion true
+::db::check_and_set_root_attr route_concurrent_minimize_via_count_effort high
+::db::check_and_set_root_attr route_detail_antenna_factor 1.0
+::db::check_and_set_root_attr route_detail_post_route_spread_wire true
+::db::check_and_set_root_attr route_detail_use_multi_cut_via_effort medium
+::db::check_and_set_root_attr route_early_global_secondary_pg false
+::db::check_and_set_root_attr route_exp_design_mode_bottom_routing_layer 2
+::db::check_and_set_root_attr route_extract_third_party_compatible false
+::db::check_and_set_root_attr route_global_exp_timing_driven_std_delay 55.3
+::db::check_and_set_root_attr route_global_exp_timing_driven_use_tif_timing_engine_for_import_design false
+::db::check_and_set_root_attr route_high_freq_search_repair true
+::db::check_and_set_root_attr route_re_insert_filler_cell_list {FILL1 FILL4 FILL16}
+::db::check_and_set_root_attr route_re_insert_filler_cell_list_from_file false
+::db::check_and_set_root_attr route_with_si_driven true
+::db::check_and_set_root_attr route_with_si_post_route_fix false
+::db::check_and_set_root_attr route_with_timing_driven true
+::db::check_and_set_root_attr si_enable_drv_with_delta_slew true
+::db::check_and_set_root_attr write_def_stream_check_uncolored false

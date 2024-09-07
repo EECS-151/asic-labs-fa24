@@ -1,0 +1,98 @@
+catch { setDesignMode -bottomRoutingLayer 2 }
+catch { setDesignMode -expressRoute true }
+catch { setDesignMode -flowEffort standard }
+catch { setDesignMode -powerEffort low }
+catch { setDesignMode -process 130 }
+catch { setDesignMode -propagateActivity true }
+catch { setDesignMode -topRoutingLayer {} }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -opt_view_pruning_hold_views_active_list { ff_n40C_1v95.hold_view } }
+catch { setOptMode -opt_view_pruning_setup_views_active_list { ss_100C_1v60.setup_view } }
+catch { setOptMode -opt_view_pruning_hold_views_persistent_list { ff_n40C_1v95.hold_view} }
+catch { setOptMode -opt_view_pruning_setup_views_persistent_list { ss_100C_1v60.setup_view} }
+catch { setOptMode -opt_view_pruning_tdgr_setup_views_persistent_list { ss_100C_1v60.setup_view} }
+catch { setOptMode -opt_view_pruning_hold_target_slack_auto_flow 1000 }
+catch { setOptMode -opt_consider_routing_congestion true }
+catch { setOptMode -opt_clock_gate_aware false }
+catch { setOptMode -opt_delete_insts true }
+catch { setOptMode -opt_detail_drv_failure_reason true }
+catch { setOptMode -opt_drv_margin 0 }
+catch { setOptMode -opt_enable_podv2_clock_opt_flow true }
+catch { setOptMode -opt_drv true }
+catch { setOptMode -opt_fix_fanout_load true }
+catch { setOptMode -opt_post_route_fix_si_transitions true }
+catch { setOptMode -opt_hold_target_slack 0.1 }
+catch { setOptMode -opt_honor_fences true }
+catch { setOptMode -opt_resize_flip_flops true }
+catch { setOptMode -opt_post_route_area_reclaim setupAware }
+catch { setOptMode -opt_post_route_hold_recovery auto }
+catch { setOptMode -opt_preserve_all_sequential false }
+catch { setOptMode -opt_area_recovery true }
+catch { setOptMode -opt_sequential_genus_restructure_report_failure_reason true }
+catch { setOptMode -opt_setup_target_slack 0.1 }
+catch { setOptMode -opt_verbose true }
+catch { setPathGroupOptions reg2reg -effortLevel high -weight 2 }
+catch { setPathGroupOptions reg2reg -late -slackAdjustment -0 }
+catch { setPathGroupOptions default -late -slackAdjustment -0 }
+catch { setPathGroupOptions tdgp_reg2reg_default -effortLevel high }
+catch { setPathGroupOptions tdgp_reg2reg_default -late -slackAdjustment -0 }
+catch { setExtractRCMode  -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3 -minNetTermNrToBeInMem 50 }
+catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "true"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -drouteUseMultiCutViaEffort "medium"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 55.300000}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
+catch {setNanoRouteMode -quiet -hfrouteSearchRepair "true"}
+catch {setNanoRouteMode -quiet -routeAntennaCellName "sky130_fd_sc_hd__diode_2"}
+catch {setNanoRouteMode -quiet -routeConcurrentMinimizeViaCountEffort "high"}
+catch {setNanoRouteMode -quiet -routeExpDesignModeBottomRoutingLayer 2}
+catch {setNanoRouteMode -quiet -routeInsertAntennaDiode true}
+catch {setNanoRouteMode -quiet -routeReInsertFillerCellList "FILL1 FILL4 FILL16"}
+catch {setNanoRouteMode -quiet -routeReInsertFillerCellListFromFile false}
+catch {setNanoRouteMode -quiet -routeWithSiDriven true}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+
+catch { setPlaceMode -place_detail_check_cut_spacing true }
+catch { setPlaceMode -place_global_cong_effort high }
+catch { setPlaceMode -place_global_place_io_pins true }
+catch { setPlaceMode -place_global_solver_effort high }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { setUsefulSkewMode -opt_skew_eco_route false }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_enablePrePlacedFlow false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware true }
+catch { setDelayCalMode -socv_accuracy_mode low }
+catch { setPinAssignMode -pinEditInBatch false }
+catch { setPinAssignMode -promotedMacroMaxLayer met5 }
+catch { setPinAssignMode -promotedMacroMinLayer met1 }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -enable_drv_with_delta_slew true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setAddStripeMode -spacing_from_block 2 }
+catch { setAddStripeMode -stacked_via_bottom_layer met4 }
+catch { setAddStripeMode -stacked_via_top_layer met5 }
+catch { setAddStripeMode -trim_antenna_back_to_shape stripe }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setFillerMode -core {FILL1 FILL4 FILL16} }
+catch { setFPlanMode -cellsForExtraSites {} }
+catch { setFPlanMode -defaultPowerDomainSite true }
+catch { setFPlanMode -defaultTechSite CoreSite }
+catch { setFPlanMode -extraSites {} }
+catch { setFPlanMode -maxIoHeight true }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }
+catch { setFPlanMode -snapDieGrid manufacturing }

@@ -1,0 +1,111 @@
+*----------------------------------------------------------------------------------------
+*	Voltus IC Power Integrity Solution 22.12-s082_1 (64bit) 05/04/2023 21:55 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2024-Aug-16 19:51:35 (2024-Aug-17 02:51:35 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: fir
+*
+*	Liberty Libraries used: 
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sky130_ff_1.98_0_nldm.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+*	        ff_n40C_1v95.hold_view: /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:       1.98 
+*
+*	Parasitic Files used: 
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/build/par-rundir/fir.ff_n40C_1v95.par.spef
+*
+*       Power View : ff_n40C_1v95.hold_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -o staticPowerReports.ff_n40C_1v95.hold_view -view ff_n40C_1v95.hold_view
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.83306465 	   18.5136%
+Total Switching Power:       3.66361879 	   81.4182%
+Total Leakage Power:         0.00307212 	    0.0683%
+Total Power:                 4.49975557 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.2372     0.01909   0.0005326      0.2568       5.707 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                     0.5259        3.48    0.002477       4.008       89.08 
+Clock (Combinational)            0.06992      0.1647   6.251e-05      0.2347       5.216 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                             0.8331       3.664    0.003072         4.5         100 
+-----------------------------------------------------------------------------------------
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                              0.06992      0.1647   6.251e-05      0.2347       5.216 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)     0.06992      0.1647   6.251e-05      0.2347       5.216 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.005000 usec 
+Clock Toggle Rate:   400.0000 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.98     0.8331       3.664    0.003072         4.5         100 
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power:            FE_OFC17_Out_7 (BUFX16):            0.298 
+*                Highest Leakage Power:            FE_OFC38_Out_0 (BUFX16):        3.435e-05 
+*          Total Cap:      1.96983e-11 F
+*          Total instances in design:   243
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

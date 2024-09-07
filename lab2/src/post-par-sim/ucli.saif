@@ -1,0 +1,1600 @@
+/** The set_gate_level_monitoring command explicitly turns **/
+/** ON the internal nets monitoring **/
+(SAIFILE
+(SAIFVERSION "2.0")
+(DIRECTION "backward")
+(DESIGN )
+(DATE "Fri Aug 16 19:33:51 2024")
+(VENDOR "Synopsys, Inc")
+(PROGRAM_NAME "VCS P-2019.06_Full64")
+(VERSION "1.0")
+(DIVIDER / )
+(TIMESCALE 1 ns)
+(DURATION 26.00)
+(INSTANCE fir_tb
+   (INSTANCE dut
+      (NET
+         (clk
+            (T0 13) (T1 13) (TX 0)
+            (TC 51) (IG 0)
+         )
+         (rst
+            (T0 25) (T1 1) (TX 0)
+            (TC 1) (IG 0)
+         )
+         (In\[3\]
+            (T0 13) (T1 12) (TX 1)
+            (TC 3) (IG 0)
+         )
+         (In\[2\]
+            (T0 15) (T1 10) (TX 1)
+            (TC 5) (IG 0)
+         )
+         (In\[1\]
+            (T0 17) (T1 8) (TX 1)
+            (TC 4) (IG 0)
+         )
+         (In\[0\]
+            (T0 14) (T1 11) (TX 1)
+            (TC 11) (IG 0)
+         )
+         (Out\[15\]
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (Out\[14\]
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (Out\[13\]
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (Out\[12\]
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (Out\[11\]
+            (T0 14) (T1 6) (TX 6)
+            (TC 1) (IG 0)
+         )
+         (Out\[10\]
+            (T0 15) (T1 5) (TX 6)
+            (TC 1) (IG 0)
+         )
+         (Out\[9\]
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (Out\[8\]
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (Out\[7\]
+            (T0 17) (T1 6) (TX 3)
+            (TC 2) (IG 0)
+         )
+         (Out\[6\]
+            (T0 14) (T1 9) (TX 3)
+            (TC 2) (IG 0)
+         )
+         (Out\[5\]
+            (T0 15) (T1 8) (TX 3)
+            (TC 4) (IG 0)
+         )
+         (Out\[4\]
+            (T0 19) (T1 4) (TX 3)
+            (TC 2) (IG 0)
+         )
+         (Out\[3\]
+            (T0 16) (T1 6) (TX 4)
+            (TC 4) (IG 0)
+         )
+         (Out\[2\]
+            (T0 18) (T1 5) (TX 3)
+            (TC 3) (IG 0)
+         )
+         (Out\[1\]
+            (T0 17) (T1 6) (TX 3)
+            (TC 2) (IG 0)
+         )
+         (Out\[0\]
+            (T0 17) (T1 6) (TX 3)
+            (TC 2) (IG 0)
+         )
+         (FE_PHN160_In_2
+            (T0 15) (T1 10) (TX 1)
+            (TC 5) (IG 0)
+         )
+         (FE_PHN159_In_0
+            (T0 14) (T1 11) (TX 1)
+            (TC 11) (IG 0)
+         )
+         (FE_PHN158_In_3
+            (T0 13) (T1 12) (TX 1)
+            (TC 3) (IG 0)
+         )
+         (FE_PHN153_delay_chain0_3
+            (T0 19) (T1 7) (TX 0)
+            (TC 3) (IG 0)
+         )
+         (FE_PHN152_In_1
+            (T0 17) (T1 8) (TX 1)
+            (TC 4) (IG 0)
+         )
+         (FE_PHN144_In_2
+            (T0 15) (T1 10) (TX 1)
+            (TC 5) (IG 0)
+         )
+         (FE_PHN141_In_0
+            (T0 14) (T1 11) (TX 1)
+            (TC 11) (IG 0)
+         )
+         (FE_PHN140_delay_chain0_3
+            (T0 19) (T1 7) (TX 0)
+            (TC 3) (IG 0)
+         )
+         (FE_PHN139_In_1
+            (T0 17) (T1 8) (TX 1)
+            (TC 4) (IG 0)
+         )
+         (FE_PHN138_In_3
+            (T0 13) (T1 12) (TX 1)
+            (TC 3) (IG 0)
+         )
+         (FE_PHN136_rst
+            (T0 25) (T1 1) (TX 0)
+            (TC 1) (IG 0)
+         )
+         (FE_PHN120_delay_chain0_3
+            (T0 19) (T1 7) (TX 0)
+            (TC 3) (IG 0)
+         )
+         (FE_PHN119_In_2
+            (T0 15) (T1 10) (TX 1)
+            (TC 5) (IG 0)
+         )
+         (FE_PHN118_In_0
+            (T0 13) (T1 11) (TX 2)
+            (TC 11) (IG 0)
+         )
+         (FE_PHN117_In_1
+            (T0 16) (T1 8) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_PHN96_delay_chain0_3
+            (T0 19) (T1 7) (TX 0)
+            (TC 3) (IG 0)
+         )
+         (FE_PHN74_rst
+            (T0 24) (T1 1) (TX 1)
+            (TC 1) (IG 0)
+         )
+         (FE_PHN53_rst
+            (T0 24) (T1 1) (TX 1)
+            (TC 1) (IG 0)
+         )
+         (CTS_8
+            (T0 13) (T1 13) (TX 0)
+            (TC 51) (IG 0)
+         )
+         (CTS_7
+            (T0 15) (T1 10) (TX 1)
+            (TC 50) (IG 0)
+         )
+         (CTS_6
+            (T0 16) (T1 9) (TX 1)
+            (TC 50) (IG 0)
+         )
+         (CTS_3
+            (T0 17) (T1 8) (TX 1)
+            (TC 49) (IG 0)
+         )
+         (CTS_2
+            (T0 18) (T1 7) (TX 1)
+            (TC 48) (IG 0)
+         )
+         (CTS_1
+            (T0 25) (T1 0) (TX 1)
+            (TC 0) (IG 0)
+         )
+         (CTS_5
+            (T0 18) (T1 7) (TX 1)
+            (TC 48) (IG 0)
+         )
+         (CTS_4
+            (T0 25) (T1 0) (TX 1)
+            (TC 0) (IG 0)
+         )
+         (FE_OFN48_Out_11
+            (T0 14) (T1 6) (TX 6)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN47_Out_12
+            (T0 14) (T1 7) (TX 5)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN38_Out_0
+            (T0 18) (T1 6) (TX 2)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN37_Out_0
+            (T0 6) (T1 18) (TX 2)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN36_Out_0
+            (T0 19) (T1 6) (TX 1)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN35_Out_0
+            (T0 6) (T1 19) (TX 1)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN34_Out_0
+            (T0 19) (T1 6) (TX 1)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN33_Out_1
+            (T0 18) (T1 6) (TX 2)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN32_Out_1
+            (T0 6) (T1 18) (TX 2)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN31_Out_1
+            (T0 18) (T1 6) (TX 2)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN30_Out_1
+            (T0 6) (T1 19) (TX 1)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN29_Out_1
+            (T0 19) (T1 6) (TX 1)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN28_Out_2
+            (T0 19) (T1 6) (TX 1)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN27_Out_2
+            (T0 6) (T1 19) (TX 1)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN26_Out_2
+            (T0 19) (T1 5) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN25_Out_3
+            (T0 17) (T1 7) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN24_Out_3
+            (T0 7) (T1 17) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN23_Out_3
+            (T0 18) (T1 6) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN22_Out_4
+            (T0 19) (T1 5) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN21_Out_4
+            (T0 19) (T1 5) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN20_Out_5
+            (T0 15) (T1 9) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN19_Out_5
+            (T0 15) (T1 9) (TX 2)
+            (TC 4) (IG 0)
+         )
+         (FE_OFN18_Out_6
+            (T0 14) (T1 9) (TX 3)
+            (TC 2) (IG 0)
+         )
+         (FE_OFN17_Out_7
+            (T0 17) (T1 6) (TX 3)
+            (TC 3) (IG 0)
+         )
+         (FE_OFN16_Out_7
+            (T0 17) (T1 6) (TX 3)
+            (TC 3) (IG 0)
+         )
+         (FE_RN_1
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN10_Out_10
+            (T0 14) (T1 8) (TX 4)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN5_Out_10
+            (T0 14) (T1 9) (TX 3)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN4_Out_10
+            (T0 14) (T1 9) (TX 3)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN2_Out_10
+            (T0 14) (T1 9) (TX 3)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN1_Out_10
+            (T0 14) (T1 9) (TX 3)
+            (TC 1) (IG 0)
+         )
+         (FE_OFN0_Out_10
+            (T0 14) (T1 10) (TX 2)
+            (TC 1) (IG 0)
+         )
+         (delay_chain0\[3\]
+            (T0 19) (T1 7) (TX 0)
+            (TC 3) (IG 0)
+         )
+         (delay_chain0\[2\]
+            (T0 17) (T1 9) (TX 0)
+            (TC 2) (IG 0)
+         )
+         (delay_chain0\[1\]
+            (T0 20) (T1 6) (TX 0)
+            (TC 2) (IG 0)
+         )
+         (delay_chain0\[0\]
+            (T0 20) (T1 6) (TX 0)
+            (TC 2) (IG 0)
+         )
+         (delay_chain1\[3\]
+            (T0 20) (T1 6) (TX 0)
+            (TC 2) (IG 0)
+         )
+         (delay_chain1\[2\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain1\[1\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain1\[0\]
+            (T0 20) (T1 6) (TX 0)
+            (TC 2) (IG 0)
+         )
+         (delay_chain2\[3\]
+            (T0 22) (T1 4) (TX 0)
+            (TC 1) (IG 0)
+         )
+         (delay_chain2\[2\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain2\[1\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain2\[0\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain3\[3\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain3\[2\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain3\[1\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain3\[0\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain4\[3\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain4\[2\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain4\[1\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (delay_chain4\[0\]
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED19
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED20
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED21
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED22
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED23
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED24
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+         (UNCONNECTED25
+            (T0 26) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+         )
+      )
+      (INSTANCE add0
+         (NET
+            (in0\[3\]
+               (T0 19) (T1 7) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (in0\[2\]
+               (T0 17) (T1 9) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (in0\[1\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (in0\[0\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (in1\[3\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (in1\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in1\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in1\[0\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (in2\[3\]
+               (T0 22) (T1 4) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (in2\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in2\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in2\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in3\[3\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in3\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in3\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in3\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in4\[3\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in4\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in4\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (in4\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[15\]
+               (T0 14) (T1 10) (TX 2)
+               (TC 1) (IG 0)
+            )
+            (Out\[14\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[13\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[12\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[11\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[10\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[9\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[8\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (Out\[7\]
+               (T0 17) (T1 6) (TX 3)
+               (TC 3) (IG 0)
+            )
+            (Out\[6\]
+               (T0 14) (T1 9) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (Out\[5\]
+               (T0 15) (T1 9) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (Out\[4\]
+               (T0 19) (T1 5) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (Out\[3\]
+               (T0 18) (T1 6) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (Out\[2\]
+               (T0 19) (T1 5) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (Out\[1\]
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (Out\[0\]
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_10
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_11
+               (T0 7) (T1 19) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (n_12
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_13
+               (T0 4) (T1 22) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (n_14
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_15
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_16
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_17
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_18
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_19
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_20
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_21
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_22
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_23
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_24
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_25
+               (T0 7) (T1 19) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (n_26
+               (T0 19) (T1 6) (TX 1)
+               (TC 3) (IG 0)
+            )
+            (n_27
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_28
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_29
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_31
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_32
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_33
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_34
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_35
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_36
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_37
+               (T0 20) (T1 5) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_39
+               (T0 23) (T1 2) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_41
+               (T0 4) (T1 20) (TX 2)
+               (TC 3) (IG 0)
+            )
+            (n_43
+               (T0 9) (T1 15) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (n_45
+               (T0 9) (T1 14) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (n_47
+               (T0 10) (T1 14) (TX 2)
+               (TC 1) (IG 0)
+            )
+         )
+      )
+      (INSTANCE delay_step0
+         (NET
+            (q\[3\]
+               (T0 19) (T1 7) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (q\[2\]
+               (T0 17) (T1 9) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (q\[1\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (q\[0\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (d\[3\]
+               (T0 13) (T1 12) (TX 1)
+               (TC 3) (IG 0)
+            )
+            (d\[2\]
+               (T0 15) (T1 10) (TX 1)
+               (TC 5) (IG 0)
+            )
+            (d\[1\]
+               (T0 16) (T1 8) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (d\[0\]
+               (T0 13) (T1 11) (TX 2)
+               (TC 11) (IG 0)
+            )
+            (rst
+               (T0 25) (T1 1) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (clk_clone1
+               (T0 18) (T1 7) (TX 1)
+               (TC 48) (IG 0)
+            )
+            (clk_clone2
+               (T0 18) (T1 7) (TX 1)
+               (TC 48) (IG 0)
+            )
+            (clk
+               (T0 17) (T1 8) (TX 1)
+               (TC 49) (IG 0)
+            )
+            (p1
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (p2
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN151_n_7
+               (T0 14) (T1 10) (TX 2)
+               (TC 3) (IG 0)
+            )
+            (FE_PHN137_n_5
+               (T0 16) (T1 8) (TX 2)
+               (TC 3) (IG 0)
+            )
+            (FE_PHN116_In_3
+               (T0 13) (T1 12) (TX 1)
+               (TC 3) (IG 0)
+            )
+            (FE_PHN115_n_7
+               (T0 14) (T1 9) (TX 3)
+               (TC 3) (IG 0)
+            )
+            (FE_PHN114_rst
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN108_In_2
+               (T0 15) (T1 10) (TX 1)
+               (TC 5) (IG 0)
+            )
+            (FE_PHN97_In_0
+               (T0 14) (T1 10) (TX 2)
+               (TC 10) (IG 0)
+            )
+            (FE_PHN95_In_1
+               (T0 16) (T1 8) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (FE_PHN93_n_6
+               (T0 13) (T1 10) (TX 3)
+               (TC 9) (IG 0)
+            )
+            (FE_PHN87_n_7
+               (T0 14) (T1 9) (TX 3)
+               (TC 3) (IG 0)
+            )
+            (FE_PHN77_n_5
+               (T0 16) (T1 8) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (FE_PHN75_n_4
+               (T0 14) (T1 9) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN73_n_4
+               (T0 12) (T1 9) (TX 5)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN72_n_5
+               (T0 16) (T1 7) (TX 3)
+               (TC 3) (IG 0)
+            )
+            (FE_PHN70_n_6
+               (T0 16) (T1 6) (TX 4)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN59_n_7
+               (T0 14) (T1 10) (TX 2)
+               (TC 3) (IG 0)
+            )
+            (CTS_1
+               (T0 17) (T1 7) (TX 2)
+               (TC 48) (IG 0)
+            )
+            (UNCONNECTED
+               (T0 12) (T1 14) (TX 0)
+               (TC 4) (IG 0)
+            )
+            (UNCONNECTED0
+               (T0 15) (T1 11) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (UNCONNECTED1
+               (T0 11) (T1 15) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (UNCONNECTED2
+               (T0 11) (T1 15) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (n_0
+               (T0 12) (T1 13) (TX 1)
+               (TC 3) (IG 0)
+            )
+            (n_1
+               (T0 8) (T1 16) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (n_2
+               (T0 10) (T1 14) (TX 2)
+               (TC 5) (IG 0)
+            )
+            (n_3
+               (T0 11) (T1 12) (TX 3)
+               (TC 10) (IG 0)
+            )
+            (n_4
+               (T0 15) (T1 9) (TX 2)
+               (TC 5) (IG 1)
+            )
+            (n_5
+               (T0 16) (T1 8) (TX 2)
+               (TC 4) (IG 0)
+            )
+            (n_6
+               (T0 13) (T1 11) (TX 2)
+               (TC 10) (IG 1)
+            )
+            (n_7
+               (T0 14) (T1 11) (TX 1)
+               (TC 3) (IG 0)
+            )
+         )
+      )
+      (INSTANCE delay_step1
+         (NET
+            (q\[3\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (q\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[0\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (d\[3\]
+               (T0 19) (T1 7) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (d\[2\]
+               (T0 17) (T1 9) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (d\[1\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (d\[0\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (rst
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (clk
+               (T0 18) (T1 7) (TX 1)
+               (TC 48) (IG 0)
+            )
+            (clk_clone3
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (clk_clone2
+               (T0 18) (T1 7) (TX 1)
+               (TC 48) (IG 0)
+            )
+            (clk_clone1
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN161_n_4
+               (T0 15) (T1 9) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN155_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN154_n_2
+               (T0 9) (T1 17) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN143_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN142_n_2
+               (T0 9) (T1 17) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN130_n_1
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN122_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN121_n_2
+               (T0 9) (T1 16) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN113_n_2
+               (T0 9) (T1 17) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN106_n_1
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN99_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN92_n_4
+               (T0 14) (T1 9) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN89_n_7
+               (T0 17) (T1 6) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN83_n_5
+               (T0 17) (T1 6) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN79_n_6
+               (T0 18) (T1 6) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN71_n_6
+               (T0 17) (T1 6) (TX 3)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN64_n_4
+               (T0 15) (T1 9) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN57_n_7
+               (T0 18) (T1 6) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN54_n_5
+               (T0 18) (T1 6) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (UNCONNECTED3
+               (T0 10) (T1 16) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (UNCONNECTED4
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED5
+               (T0 10) (T1 16) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (UNCONNECTED6
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_0
+               (T0 7) (T1 19) (TX 0)
+               (TC 3) (IG 0)
+            )
+            (n_1
+               (T0 6) (T1 20) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (n_2
+               (T0 9) (T1 17) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (n_3
+               (T0 6) (T1 20) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (n_4
+               (T0 16) (T1 9) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_5
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_6
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_7
+               (T0 19) (T1 6) (TX 1)
+               (TC 3) (IG 0)
+            )
+         )
+      )
+      (INSTANCE delay_step2
+         (NET
+            (q\[3\]
+               (T0 22) (T1 4) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (q\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[3\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (d\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[0\]
+               (T0 20) (T1 6) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (rst
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (clk
+               (T0 18) (T1 7) (TX 1)
+               (TC 48) (IG 0)
+            )
+            (clk_clone2
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (clk_clone1
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN149_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN148_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN134_n_0
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN131_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN128_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN127_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN110_n_1
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN109_n_0
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN101_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN100_n_3
+               (T0 6) (T1 19) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN94_n_7
+               (T0 18) (T1 5) (TX 3)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN91_n_6
+               (T0 18) (T1 5) (TX 3)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN81_n_5
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN76_n_4
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN69_n_4
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN63_n_6
+               (T0 18) (T1 6) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (FE_PHN60_n_5
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN58_n_7
+               (T0 18) (T1 6) (TX 2)
+               (TC 2) (IG 0)
+            )
+            (UNCONNECTED7
+               (T0 8) (T1 18) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (UNCONNECTED8
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED9
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED10
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_0
+               (T0 6) (T1 20) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (n_1
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_2
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_3
+               (T0 6) (T1 20) (TX 0)
+               (TC 2) (IG 0)
+            )
+            (n_4
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_5
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_6
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+            (n_7
+               (T0 19) (T1 6) (TX 1)
+               (TC 2) (IG 0)
+            )
+         )
+      )
+      (INSTANCE delay_step3
+         (NET
+            (q\[3\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[3\]
+               (T0 22) (T1 4) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (d\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (rst
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (clk_clone1
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (clk
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN157_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN147_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN145_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN135_n_3
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN133_n_0
+               (T0 4) (T1 22) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN125_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN124_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN112_n_3
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN111_n_0
+               (T0 4) (T1 22) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN104_n_1
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN98_n_2
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN90_n_5
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN86_n_6
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN85_n_7
+               (T0 22) (T1 1) (TX 3)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN78_n_4
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN67_n_7
+               (T0 22) (T1 2) (TX 2)
+               (TC 1) (IG 0)
+            )
+            (FE_PHN66_n_5
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN65_n_6
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN62_n_4
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED11
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED12
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED13
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED14
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_0
+               (T0 4) (T1 22) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (n_1
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_2
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_3
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_4
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_5
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_6
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_7
+               (T0 22) (T1 3) (TX 1)
+               (TC 1) (IG 0)
+            )
+         )
+      )
+      (INSTANCE delay_step4
+         (NET
+            (q\[3\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (q\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[3\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[2\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[1\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (d\[0\]
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (rst
+               (T0 24) (T1 1) (TX 1)
+               (TC 1) (IG 0)
+            )
+            (clk
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (clk_clone1
+               (T0 18) (T1 7) (TX 1)
+               (TC 48) (IG 0)
+            )
+            (clk_clone2
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN156_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN150_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN146_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN132_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN129_n_3
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN126_n_2
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN123_n_0
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN107_n_3
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN105_n_2
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN103_n_0
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN102_n_1
+               (T0 0) (T1 25) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN88_n_5
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN84_n_4
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN82_n_7
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN80_n_6
+               (T0 23) (T1 0) (TX 3)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN68_n_7
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN61_n_4
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN56_n_5
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (FE_PHN55_n_6
+               (T0 24) (T1 0) (TX 2)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED15
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED16
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (UNCONNECTED17
+               (T0 4) (T1 22) (TX 0)
+               (TC 1) (IG 0)
+            )
+            (UNCONNECTED18
+               (T0 26) (T1 0) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_0
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_1
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_2
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_3
+               (T0 0) (T1 26) (TX 0)
+               (TC 0) (IG 0)
+            )
+            (n_4
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_5
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_6
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+            (n_7
+               (T0 25) (T1 0) (TX 1)
+               (TC 0) (IG 0)
+            )
+         )
+      )
+   )
+)
+)

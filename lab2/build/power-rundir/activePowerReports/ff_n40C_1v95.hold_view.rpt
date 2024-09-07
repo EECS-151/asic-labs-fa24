@@ -1,0 +1,87 @@
+*----------------------------------------------------------------------------------------
+*	Voltus Power Analysis - Power Calculator - Version v22.12-s078_1 64-bit (04/27/2023 13:52:28)
+*	Copyright 2007, Cadence Design Systems, Inc.
+*
+* 	Date & Time:	2024-Aug-16 19:52:18 (2024-Aug-17 02:52:18 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: fir
+*
+*	Liberty Libraries used:
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sky130_ff_1.98_0_nldm.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/src/post-par-sim/fir_FINAL/libs/mmmc/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+*
+*	Parasitic Files used:
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/build/par-rundir/fir.ff_n40C_1v95.par.spef
+*
+*	DEF Files used:
+*	        /tmp/ssv_tmpdir_370320_4XTvjr/eps_out_370320.def.gz
+*
+*	Switching Activity File used:
+*	        /home/tmp/eecs151-tag/asic-labs-sp24/lab2/skel/build/sim-rundir/ucli.saif
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power -o activePowerReports.sim-rundir.ucli.saif.ff_n40C_1v95.hold_view
+*
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.3785     0.01939   0.0005294      0.3984        8.61
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                     0.5617       2.746    0.002631        3.31       71.54
+Clock (Combinational)             0.2567      0.6617   6.236e-05      0.9185       19.85
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              1.197       3.427    0.003223       4.627         100
+-----------------------------------------------------------------------------------------
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.2567      0.6617   6.236e-05      0.9185       19.85
+-----------------------------------------------------------------------------------------
+Total                             0.2567      0.6617   6.236e-05      0.9185       19.85
+-----------------------------------------------------------------------------------------
+ 
+Clock: clk
+Clock Period:                0.005 usec
+Clock Toggle Rate:   400.0000 MHz
+Clock Static Probability:  0.5000
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.98      1.197       3.427    0.003223       4.627         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:            FE_OFC25_Out_3 (BUFX16):           0.3258
+*              Highest Leakage Power:            FE_OFC28_Out_2 (BUFX16):        4.384e-05
+*                Total Cap:      1.98845e-11 F
+*                Total instances in design:   243
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
