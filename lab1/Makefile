@@ -8,7 +8,7 @@ VCS                     := /home/ff/eecs151/hammer-tools/synopsys/vcs/P-2019.06/
 VCS_OPTS                := -notice -line +lint=all,noVCDE,noNS,noSVA-UA -sverilog -timescale=1ns/1ps -debug
 VCS_TARGETS             := $(SIM_TARGETS:%.v=%.vpd)
 IVERILOG                := iverilog
-IVERILOG_OPTS           := -D IVERILOG=1 -g2019 -gassertions -Wall -Wno-timescale
+IVERILOG_OPTS           := -D IVERILOG=1 -g2012 -gassertions -Wall -Wno-timescale
 IVERILOG_TARGETS        := $(SIM_TARGETS:%.v=%.fst)
 VVP                     := vvp
 RTL						:= $(ABS_TOP)/src/d_flip_flop.v
