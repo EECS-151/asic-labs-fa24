@@ -1,0 +1,17 @@
+# RTL Simulation Variables
+sim.inputs:
+  input_files:
+    - "src/divider.v"
+    - "src/divider_testbench.v"
+    - "src/EECS151.v"
+  timescale: "1ns/10ps"
+  options:
+    - "-notice"
+    - "-line"
+    - "+lint=all,noVCDE"
+    - "+v2k"
+    - "-debug"
+  top_module: "divider_testbench"
+  tb_name: "divider_testbench"
+  defines: 
+    - "CLOCK_PERIOD=20.00000"
