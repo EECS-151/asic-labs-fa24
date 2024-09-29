@@ -32,7 +32,7 @@ INPUT_SIM_GL_PAR_DB ?= $(OBJ_DIR)/par-to-sim_input.json
 OUTPUT_SIM_DB		?= $(OBJ_DIR)/sim-rundir/sim-output-full.json
 INPUT_PWR_SIM_GL_DB ?= $(OBJ_DIR)/sim-to-power_input.json
 INPUT_PWR_PAR_DB    ?= $(OBJ_DIR)/par-to-power_input.json
-HAMMER_EXEC         ?= hammer-vlsi
+HAMMER_EXEC         ?= $(vlsi_dir)/lab-vlsi
 
 #########################################################################################
 # general rules
